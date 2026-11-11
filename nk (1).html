@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일하다 진짜로 죽을 것 같아요!!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Noto Sans KR) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f0f12',
+                        cardBg: '#18181c',
+                        cardBorder: '#2a2a32',
+                        accentRed: '#e53e3e',
+                        accentDarkRed: '#9b2c2c',
+                        textMuted: '#a0aec0',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f0f12;
+            color: #ffffff;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .glow-title {
+            text-shadow: 0 0 15px rgba(229, 62, 62, 0.4);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0f0f12;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #2a2a32;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="min-h-screen custom-scrollbar selection:bg-accentRed selection:text-white pb-20">
+
+    <!-- Header / Hero Section -->
+    <header class="relative border-b border-cardBorder bg-gradient-to-b from-black via-darkBg to-darkBg py-16 px-4 sm:px-6 text-center">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <span class="inline-block px-3 py-1 bg-accentRed/10 border border-accentRed/30 text-accentRed text-xs font-semibold tracking-wider rounded-full uppercase">
+                일본 배경 현대 판타지
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight glow-title leading-tight">
+                일하다 진짜로 죽을 것 같아요!!
+            </h1>
+            <p class="text-textMuted text-sm sm:text-base font-light max-w-xl mx-auto">
+                낮에는 평범한 컨설팅 회사, 밤에는 크리처를 추적하는 비밀 처리 업체 'NK 컨설팅'의 기록
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 space-y-16">
+
+        <!-- 1. 세계관 설명 (Worldview Section) -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3 border-l-4 border-accentRed pl-4">
+                <h2 class="text-xl sm:text-2xl font-bold text-white tracking-wide">WORLDVIEW</h2>
+                <span class="text-xs text-textMuted uppercase tracking-widest">| 세계관</span>
+            </div>
+
+            <div class="bg-cardBg border border-cardBorder rounded-xl p-6 sm:p-8 relative overflow-hidden shadow-xl">
+                <div class="absolute -right-10 -bottom-10 opacity-5 text-accentRed pointer-events-none">
+                    <i class="fa-solid me-2 fa-biohazard text-9xl"></i>
+                </div>
+                
+                <div class="space-y-4 text-gray-300 leading-relaxed text-sm sm:text-base font-light relative z-10">
+                    <p class="text-white font-medium">
+                        2022년, 원인 불명의 괴물 <span class="text-accentRed font-semibold">'크리처'</span>가 모습을 드러냈다.
+                    </p>
+                    <p>
+                        평범한 인간의 탈을 쓴 채 밤마다 사람을 사냥하는 괴물들.
+                    </p>
+                    <p>
+                        이 기괴한 재앙을 어둠 속에서 수습하기 위해 <span class="text-white font-semibold">TKS</span>가 설립됐고,<br class="hidden sm:inline">
+                        그 하청을 받아 밤의 현장을 청소하는 비밀 처리 업체들이 생겨났다.
+                    </p>
+                    <div class="pt-2 border-t border-cardBorder/60">
+                        <p class="italic text-gray-200">
+                            "낮에는 시시콜콜하고 평화로운 소규모 회사, 하지만 밤이 되면 크리처를 추적하는 <strong class="text-accentRed font-semibold not-italic">'NK 컨설팅'</strong>"
+                        </p>
+                        <p class="mt-2 text-textMuted text-xs sm:text-sm">
+                            그리고 당신은 인연인지 악연인지, 어떠한 계기로 이곳에 채용되고 마는데…
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. NK 컨설팅 캐릭터 소개 (Character Section) -->
+        <section class="space-y-12">
+            <div class="flex items-center space-x-3 border-l-4 border-accentRed pl-4">
+                <h2 class="text-xl sm:text-2xl font-bold text-white tracking-wide">MEMBERS</h2>
+                <span class="text-xs text-textMuted uppercase tracking-widest">| NK 컨설팅 캐릭터 소개</span>
+            </div>
+
+            <!-- 그룹 1: 사장 -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-accentRed flex items-center gap-2">
+                    <i class="fa-solid fa-user-tie text-xs"></i> 사장
+                </h3>
+                
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Profile Card -->
+                    <div class="bg-cardBg border border-cardBorder rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-5 hover:border-accentRed/40 transition-colors duration-200">
+                        <!-- Left: Image Placeholder -->
+                        <div class="w-full sm:w-40 h-48 sm:h-auto bg-darkBg/80 rounded-lg border border-dashed border-cardBorder flex flex-col items-center justify-center shrink-0 text-textMuted group hover:border-accentRed/50 transition-colors">
+                            <i class="fa-regular fa-image text-3xl mb-2 group-hover:text-accentRed transition-colors"></i>
+                            <span class="text-xs text-center px-2">캐릭터 이미지<br>(권장: 3:4 비율)</span>
+                        </div>
+                        <!-- Right: Details -->
+                        <div class="flex-1 space-y-3">
+                            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-cardBorder/60 pb-2">
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">이름을 입력하세요</h4>
+                                    <span class="text-xs text-accentRed font-mono">NK 컨설팅 대표이사</span>
+                                </div>
+                                <span class="text-xs bg-darkBg text-textMuted px-2.5 py-1 rounded border border-cardBorder">사장</span>
+                            </div>
+                            <div class="space-y-1.5 text-xs sm:text-sm text-gray-300">
+                                <p><strong class="text-textMuted">성격:</strong> 여유로움, 속을 알 수 없음, 철두철미함</p>
+                                <p><strong class="text-textMuted">특징:</strong> 평소에는 유쾌한 동네 아저씨 같지만, 크리처 현장 지휘 시 냉혹한 판단력을 보여준다.</p>
+                                <p><strong class="text-textMuted">비고:</strong> TKS 상층부와 의문의 커넥션이 있다는 소문이 있음.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 그룹 2: 관리지원부서 -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-accentRed flex items-center gap-2">
+                    <i class="fa-solid fa-headset text-xs"></i> 관리지원부서 (3명)
+                </h3>
+                
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Member 1 -->
+                    <div class="bg-cardBg border border-cardBorder rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-5 hover:border-accentRed/40 transition-colors duration-200">
+                        <div class="w-full sm:w-40 h-48 sm:h-auto bg-darkBg/80 rounded-lg border border-dashed border-cardBorder flex flex-col items-center justify-center shrink-0 text-textMuted">
+                            <i class="fa-regular fa-image text-3xl mb-2"></i>
+                            <span class="text-xs text-center px-2">캐릭터 이미지</span>
+                        </div>
+                        <div class="flex-1 space-y-3">
+                            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-cardBorder/60 pb-2">
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">캐릭터 이름 1</h4>
+                                    <span class="text-xs text-textMuted font-mono">정보 분석 & 오퍼레이팅</span>
+                                </div>
+                                <span class="text-xs bg-darkBg text-textMuted px-2.5 py-1 rounded border border-cardBorder">관리지원부</span>
+                            </div>
+                            <div class="space-y-1.5 text-xs sm:text-sm text-gray-300">
+                                <p><strong class="text-textMuted">성격:</strong> 서술 칸 (예: 까칠함, 완벽주의자, 카페인 중독)</p>
+                                <p><strong class="text-textMuted">특징:</strong> 현장 대원들에게 실시간으로 크리처의 동선과 약점을 브리핑하는 팀의 두뇌.</p>
+                                <p><strong class="text-textMuted">비고:</strong> 밤샘 작업이 많아 항상 야근에 불만을 품고 있음.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="bg-cardBg border border-cardBorder rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-5 hover:border-accentRed/40 transition-colors duration-200">
+                        <div class="w-full sm:w-40 h-48 sm:h-auto bg-darkBg/80 rounded-lg border border-dashed border-cardBorder flex flex-col items-center justify-center shrink-0 text-textMuted">
+                            <i class="fa-regular fa-image text-3xl mb-2"></i>
+                            <span class="text-xs text-center px-2">캐릭터 이미지</span>
+                        </div>
+                        <div class="flex-1 space-y-3">
+                            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-cardBorder/60 pb-2">
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">캐릭터 이름 2</h4>
+                                    <span class="text-xs text-textMuted font-mono">장비 보수 & 은폐 담당</span>
+                                </div>
+                                <span class="text-xs bg-darkBg text-textMuted px-2.5 py-1 rounded border border-cardBorder">관리지원부</span>
+                            </div>
+                            <div class="space-y-1.5 text-xs sm:text-sm text-gray-300">
+                                <p><strong class="text-textMuted">성격:</strong> 서술 칸 (예: 온순함, 엉뚱함, 꼼꼼함)</p>
+                                <p><strong class="text-textMuted">특징:</strong> 사건 발생 후 현장 사후 처리 및 언론 통제용 알리바이를 조작하는 전문가.</p>
+                                <p><strong class="text-textMuted">비고:</strong> 서술 칸</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="bg-cardBg border border-cardBorder rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-5 hover:border-accentRed/40 transition-colors duration-200">
+                        <div class="w-full sm:w-40 h-48 sm:h-auto bg-darkBg/80 rounded-lg border border-dashed border-cardBorder flex flex-col items-center justify-center shrink-0 text-textMuted">
+                            <i class="fa-regular fa-image text-3xl mb-2"></i>
+                            <span class="text-xs text-center px-2">캐릭터 이미지</span>
+                        </div>
+                        <div class="flex-1 space-y-3">
+                            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-cardBorder/60 pb-2">
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">캐릭터 이름 3</h4>
+                                    <span class="text-xs text-textMuted font-mono">회계 & 신규 채용 관리</span>
+                                </div>
+                                <span class="text-xs bg-darkBg text-textMuted px-2.5 py-1 rounded border border-cardBorder">관리지원부</span>
+                            </div>
+                            <div class="space-y-1.5 text-xs sm:text-sm text-gray-300">
+                                <p><strong class="text-textMuted">성격:</strong> 서술 칸 (예: 칼같은 계산, 냉정함)</p>
+                                <p><strong class="text-textMuted">특징:</strong> 주인공을 NK 컨설팅으로 채용하게 만든 원인 제공자 중 한 명.</p>
+                                <p><strong class="text-textMuted">비고:</strong> 서술 칸</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 그룹 3: 특수집행부서 -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold text-accentRed flex items-center gap-2">
+                    <i class="fa-solid fa-crosshairs text-xs"></i> 특수집행부서 (3명)
+                </h3>
+                
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Member 1 -->
+                    <div class="bg-cardBg border border-cardBorder rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-5 hover:border-accentRed/40 transition-colors duration-200">
+                        <div class="w-full sm:w-40 h-48 sm:h-auto bg-darkBg/80 rounded-lg border border-dashed border-cardBorder flex flex-col items-center justify-center shrink-0 text-textMuted">
+                            <i class="fa-regular fa-image text-3xl mb-2"></i>
+                            <span class="text-xs text-center px-2">캐릭터 이미지</span>
+                        </div>
+                        <div class="flex-1 space-y-3">
+                            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-cardBorder/60 pb-2">
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">캐릭터 이름 1</h4>
+                                    <span class="text-xs text-accentRed font-mono">현장 집행 팀장</span>
+                                </div>
+                                <span class="text-xs bg-darkBg text-textMuted px-2.5 py-1 rounded border border-cardBorder">특수집행부</span>
+                            </div>
+                            <div class="space-y-1.5 text-xs sm:text-sm text-gray-300">
+                                <p><strong class="text-textMuted">성격:</strong> 서술 칸 (예: 호쾌함, 무모함, 정이 많음)</p>
+                                <p><strong class="text-textMuted">특징:</strong> 최전선에서 크리처를 토벌하는 전투 요원. 주무기는 전용 근접 무기.</p>
+                                <p><strong class="text-textMuted">비고:</strong> 서술 칸</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="bg-cardBg border border-cardBorder rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-5 hover:border-accentRed/40 transition-colors duration-200">
+                        <div class="w-full sm:w-40 h-48 sm:h-auto bg-darkBg/80 rounded-lg border border-dashed border-cardBorder flex flex-col items-center justify-center shrink-0 text-textMuted">
+                            <i class="fa-regular fa-image text-3xl mb-2"></i>
+                            <span class="text-xs text-center px-2">캐릭터 이미지</span>
+                        </div>
+                        <div class="flex-1 space-y-3">
+                            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-cardBorder/60 pb-2">
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">캐릭터 이름 2</h4>
+                                    <span class="text-xs text-textMuted font-mono">원거리 스나이퍼 / 저격수</span>
+                                </div>
+                                <span class="text-xs bg-darkBg text-textMuted px-2.5 py-1 rounded border border-cardBorder">특수집행부</span>
+                            </div>
+                            <div class="space-y-1.5 text-xs sm:text-sm text-gray-300">
+                                <p><strong class="text-textMuted">성격:</strong> 서술 칸 (예: 조용함, 과묵함, 동물 좋아함)</p>
+                                <p><strong class="text-textMuted">특징:</strong> 후방 지원 및 원거리 제거 전담.</p>
+                                <p><strong class="text-textMuted">비고:</strong> 서술 칸</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="bg-cardBg border border-cardBorder rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-5 hover:border-accentRed/40 transition-colors duration-200">
+                        <div class="w-full sm:w-40 h-48 sm:h-auto bg-darkBg/80 rounded-lg border border-dashed border-cardBorder flex flex-col items-center justify-center shrink-0 text-textMuted">
+                            <i class="fa-regular fa-image text-3xl mb-2"></i>
+                            <span class="text-xs text-center px-2">캐릭터 이미지</span>
+                        </div>
+                        <div class="flex-1 space-y-3">
+                            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-cardBorder/60 pb-2">
+                                <div>
+                                    <h4 class="text-lg font-bold text-white">주인공 (당신)</h4>
+                                    <span class="text-xs text-textMuted font-mono">신입 사원</span>
+                                </div>
+                                <span class="text-xs bg-darkBg text-textMuted px-2.5 py-1 rounded border border-cardBorder">특수집행부</span>
+                            </div>
+                            <div class="space-y-1.5 text-xs sm:text-sm text-gray-300">
+                                <p><strong class="text-textMuted">성격:</strong> 플레이어 선택 / 서술 칸</p>
+                                <p><strong class="text-textMuted">특징:</strong> 어떠한 계기로 NK 컨설팅에 반강제로 채용되어 목숨을 걸고 일하게 됨.</p>
+                                <p><strong class="text-textMuted">비고:</strong> "일하다 진짜로 죽을 것 같아요!!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 기타 메모 / 설정 칸 (Extra Section) -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3 border-l-4 border-accentRed pl-4">
+                <h2 class="text-xl sm:text-2xl font-bold text-white tracking-wide">MEMO & NOTES</h2>
+                <span class="text-xs text-textMuted uppercase tracking-widest">| 기타 설정 및 기록</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- 메모 박스 1 -->
+                <div class="bg-cardBg border border-cardBorder rounded-xl p-5 space-y-3">
+                    <h3 class="text-sm font-semibold text-accentRed flex items-center gap-2">
+                        <i class="fa-solid fa-folder-open"></i> 주요 용어 정리
+                    </h3>
+                    <ul class="text-xs sm:text-sm text-gray-300 space-y-2 list-disc list-inside font-light">
+                        <li><strong class="text-white">크리처:</strong> 밤마다 인간을 사냥하는 미형 식인 괴물.</li>
+                        <li><strong class="text-white">TKS:</strong> 크리처 사태 수습을 위해 설립된 정부 비공식 기관.</li>
+                        <li><strong class="text-white">NK 컨설팅:</strong> TKS의 하청을 받아 은밀하게 처리 작업을 수행하는 사기업.</li>
+                    </ul>
+                </div>
+
+                <!-- 메모 박스 2 -->
+                <div class="bg-cardBg border border-cardBorder rounded-xl p-5 space-y-3">
+                    <h3 class="text-sm font-semibold text-accentRed flex items-center gap-2">
+                        <i class="fa-solid fa-pen-to-square"></i> 기타 자유 서술 칸
+                    </h3>
+                    <p class="text-xs sm:text-sm text-textMuted leading-relaxed">
+                        추가적인 설정(장비, 사건 일지, 관계도, 스토리 복선 등)을 자유롭게 기입할 수 있는 공간입니다.<br><br>
+                        소설이나 창작물의 구상안 및 메모용으로 활용해 보세요.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-20 border-t border-cardBorder py-8 text-center text-xs text-textMuted">
+        <p>© NK Consulting Document Center. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
